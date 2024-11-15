@@ -1,0 +1,113 @@
+html, body{
+font-family: Arial, Helvetica, sans-serif;
+margin: 0%;
+padding: 0%;
+background-color: #e6e6e6;
+text-align: center;
+height: 100;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.inicio{
+
+background-color: cornflowerblue;
+padding: 1rem;
+
+}
+
+header{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 30px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img{
+
+max-width: 150px;
+height: auto;
+
+}
+
+nav {
+    display: flex;
+    gap: 20px; 
+}
+
+nav a {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+.main-content {
+    flex: 1;
+}
+footer {
+    background-color: cornflowerblue;
+    padding: 20px 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.footer-contact {
+    text-align: left;
+    max-width: 50%; /* Reducimos el ancho para que los íconos estén más cerca de la línea */
+    color: white;
+    padding-right: 20px; /* Espacio entre el texto y la línea divisoria */
+}
+
+.footer-contact h1, .footer-contact p, .footer-contact a {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alineamos a la izquierda para acercarlos a la línea */
+    gap: 10px;
+    padding-left: 20px; /* Espacio entre los íconos y la línea divisoria */
+}
+
+.footer-social a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+}
+
+/* Línea divisoria */
+.footer-container::before {
+    content: "";
+    height: 80%; /* Ajusta la altura de la línea */
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
